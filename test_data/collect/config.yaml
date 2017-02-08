@@ -1,0 +1,11 @@
+- candidates:
+  - incumbent: 'Yes'
+    name: Rahm Emanuel
+    party: Democrat
+    search: [Rahm Emanuel]
+  - incumbent: 'No'
+    name: Jesus G. "Chuy" Garcia
+    party: Democrat
+    search: [Chuy Garcia, Jesus Chuy Garcia]
+  race: Chicago Mayor Runoff 2015
+  year: '2015'

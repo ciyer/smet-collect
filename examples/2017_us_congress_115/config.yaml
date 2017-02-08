@@ -1,0 +1,22 @@
+- candidates:
+  - incumbent: Yes
+    name: Dianne Feinstein
+    party: Democratic
+    search: [Dianne Feinstein, "@SenFeinstein"]
+  - incumbent: Yes
+    name: Kamala Harris
+    party: Democratic
+    search: [Kamala Harris, "@KamalaHarris"]
+  race: 115 Congress Senate CA
+  year: 2017
+- candidates:
+  - incumbent: Yes
+    name: John Cornyn
+    party: Republican
+    search: [John Cornyn, "@JohnCornyn"]
+  - incumbent: Yes
+    name: Ted Cruz
+    party: Republican
+    search: [Ted Cruz, "@tedcruz"]
+  race: 115 Congress Senate TX
+  year: 2017

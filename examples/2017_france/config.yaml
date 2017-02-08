@@ -1,0 +1,27 @@
+- candidates:
+  - incumbent: No
+    name: François Fillon
+    party: Les Républicains
+    search: [Fillon, "@FrancoisFillon"]
+  - incumbent: No
+    name:  Marine Le Pen
+    party: Front National
+    search: [Le Pen, "#AuNomDuPeuple", "#Marine2017", "@MLP_officiel"]
+  - incumbent: No
+    name: Manuel Valls
+    party: Parti Socialiste
+    search: [Valls, "#Valls2017", "@manuelvalls"]
+  - incumbent: No
+    name: Benoît Hamon
+    party: Parti Socialiste
+    search: [Hamon, "#hamon2017", "@benoithamon"]
+  - incumbent: No
+    name: Emmanuel Macron
+    party: En Marche
+    search: [Macron, "#macron2017", "@EmmanuelMacron"]
+  - incumbent: No
+    name: Jean-Luc Mélenchon
+    party: Gauche Radicale
+    search: [Mélenchon, "#melenchon2017", "@JLMelenchon"]
+  race: Election Présidentielle 2017
+  year: 2017

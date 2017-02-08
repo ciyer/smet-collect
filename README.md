@@ -6,11 +6,34 @@ SMET searches twitter at periodic intervals and stores results both in original 
 
 The central tool of SMET is the python package smetcollect, which has functionality for collecting data from twitter.
 
+# Quickstart
+
+The easiest way to try smet-collect out is to use vagrant. In preparation, you need to enter your twitter API credentials into the `credentials.yaml` files in `examples/2017_france` and `examples/2017_us_congress_115`. In each folder there is a template, `credentials-template.yaml` -- enter your credentials there and rename the file to `credentials.yaml`.
+
+Then, in the src/vargrant folder
+
+    vagrant up
+    vagrant ssh
+    smet-collect pipeline /vagrant_examples/2017_us_congress_115
+    smet-collect pipeline /vagrant_examples/2017_france    
+    
+
+Once that completes, you will find results in the folders `examples/2017_us_congress_115` and `examples/2017_france`. The immediately most interesting is the subfolder `pruned`. Each configured race will have twitter data in its subfolder. The pruned data are in a straightforward to understand json format.
+
+# Installation
+
+## Requirements
+
+smet-collect requires that python, ruby, and [jq](https://stedolan.github.io/jq/) are available in the PATH. The file `src/vagrant/initialize/install_smet-collect.sh` explicitly lists all the prerequisites. Once they are installed, you can install smet-collect using pip, e.g., 
+
+    pip install -e src/python/smet-collect/
+    
+
 # Usage
 
 When the smetcollect package is installed (e.g., using pip), it also installs the smet command-line client. The command-line client operates on a folder, called a `bundle`, which conforms to a particular structure (described below).
 
-    Usage: smet [OPTIONS] COMMAND [ARGS]...
+    Usage: smet-collect [OPTIONS] COMMAND [ARGS]...
 
     Options:
     -q, --quiet  Suppress status reporting.
@@ -20,7 +43,6 @@ When the smetcollect package is installed (e.g., using pip), it also installs th
     archive        Delete the redundant data for runs that have been compressed.
     collect        Collect data for a bundle.
     compress       Compress pruned runs in a bundle.
-    describe       Describe the bundle.
     pipeline       Collect data, prune it, compress it, and delete the raw, uncompressed data.
     prune          Prune down bundle run data to the relevant...
     rebuild        Rebuild prune data in a bundle.
@@ -35,7 +57,7 @@ The `pipeline` command covers the standard usage pattern which is:
 
 You will probably want to put this into the cron to run at regular intervals:
 
-    smet pipeline ~/collect/2016-us-pres-primary
+    smet-collect pipeline ~/collect/2016-us-pres-primary
 
 # Bundle Structure
 
@@ -100,13 +122,13 @@ N.b. #hashtags and @user mentions need to be quoted, otherwise the YAML file is 
 
 The structure of the file is somewhat specific to tracking elections, but the functionality is rather generic, though you may need to ignore some of the fields.
 
-Each time smet collect or smet pipeline is called, it creates a collection run. A run groups together search results for each term in each candidate in each race and is identified by a timestamp (the time the collection run was started). For each term, the query to twitter asks only for tweets newer than the newest tweet from the previous run.
+Each time smet-collect collect or smet-collect pipeline is called, it creates a collection run. A run groups together search results for each term in each candidate in each race and is identified by a timestamp (the time the collection run was started). For each term, the query to twitter asks only for tweets newer than the newest tweet from the previous run.
 
 Smet imposes an implicit hierarchical structure on searches to twitter: race/run/candidate_name/term, where a race can be composed of multiple candidates, and a candidate can be associated with multiple terms. This structure can either be exploited or (partially) ignored in analysis.
 
 ## Output
 
-As smet is used, the bundle grows to contain additional subfolders:
+As smet-collect is used, the bundle grows to contain additional subfolders:
 
 - compressed -- parent for compressed data
 - pruned -- parent for pruned data
@@ -119,3 +141,4 @@ Data for the run on March 3, 2016 at 5 AM (GMT) is stored in several locations:
 - 2016-us-pres-primary/compressed/2016-national-democratic-primary/2016-03-21-05-01-02-440085_run.tar.bz2
 - 2016-us-pres-primary/pruned/2016-national-democratic-primary/2016-03-21-05-01-02-440085_run.json
 - 2016-us-pres-primary/compressed/2016-national-democratic-primary/2016-03-21-05-01-02-440085/[multiple json files -- one for each response from the twitter API]
+

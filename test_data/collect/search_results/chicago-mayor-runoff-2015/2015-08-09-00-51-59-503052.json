@@ -1,0 +1,208 @@
+{
+    "search_metadata": {
+        "count": 100,
+        "completed_in": 0.014,
+        "max_id_str": "627076240495652863",
+        "since_id_str": "0",
+        "refresh_url": "?since_id=627076240495652863&q=Rahm%20Emanuel&result_type=recent&include_entities=1",
+        "since_id": 0,
+        "query": "Rahm+Emanuel",
+        "max_id": 627076240495652863
+    },
+    "statuses": [
+        {
+            "contributors": null,
+            "truncated": false,
+            "text": "\"I'm afraid the Illinois Republican Party has lost its soul.\" He helped re-elect Rahm and now hints at race vs Kirk http://t.co/wskhxUtDIM",
+            "is_quote_status": false,
+            "in_reply_to_status_id": null,
+            "id": 627072118568689664,
+            "favorite_count": 1,
+            "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+            "retweeted": false,
+            "coordinates": null,
+            "entities": {
+                "symbols": [],
+                "user_mentions": [],
+                "hashtags": [],
+                "urls": [
+                    {
+                        "url": "http://t.co/wskhxUtDIM",
+                        "indices": [
+                            116,
+                            138
+                        ],
+                        "expanded_url": "http://trib.al/k2ODups",
+                        "display_url": "trib.al/k2ODups"
+                    }
+                ]
+            },
+            "in_reply_to_screen_name": null,
+            "in_reply_to_user_id": null,
+            "retweet_count": 2,
+            "id_str": "627072118568689664",
+            "favorited": false,
+            "user": {
+                "follow_request_sent": null,
+                "has_extended_profile": false,
+                "profile_use_background_image": true,
+                "default_profile_image": false,
+                "id": 18148466,
+                "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/205857086/Tiled-Twitter-background.jpg",
+                "verified": true,
+                "profile_text_color": "0A0000",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1231909459/C-thumbnail-copy_normal.jpg",
+                "profile_sidebar_fill_color": "D6D6D6",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/Xg5UNPx619",
+                                "indices": [
+                                    0,
+                                    22
+                                ],
+                                "expanded_url": "http://www.chicagobusiness.com",
+                                "display_url": "chicagobusiness.com"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "followers_count": 117076,
+                "profile_sidebar_border_color": "FFFFFF",
+                "id_str": "18148466",
+                "profile_background_color": "FFFFFF",
+                "listed_count": 2789,
+                "is_translation_enabled": false,
+                "utc_offset": -18000,
+                "statuses_count": 45134,
+                "description": "Crain's Chicago Business offers daily insights & information about Chicago\u2019s growing business community. Other CCB accounts: @CRED_by_Crains @CrainsChiHealth",
+                "friends_count": 38292,
+                "location": "Chicago, IL",
+                "profile_link_color": "111C8F",
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1231909459/C-thumbnail-copy_normal.jpg",
+                "following": null,
+                "geo_enabled": true,
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/18148466/1405020971",
+                "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/205857086/Tiled-Twitter-background.jpg",
+                "screen_name": "CrainsChicago",
+                "lang": "en",
+                "profile_background_tile": true,
+                "favourites_count": 2578,
+                "name": "Crain's Chicago ",
+                "notifications": null,
+                "url": "http://t.co/Xg5UNPx619",
+                "created_at": "Mon Dec 15 22:18:57 +0000 2008",
+                "contributors_enabled": false,
+                "time_zone": "Central Time (US & Canada)",
+                "protected": false,
+                "default_profile": false,
+                "is_translator": false
+            },
+            "geo": null,
+            "in_reply_to_user_id_str": null,
+            "possibly_sensitive": false,
+            "lang": "en",
+            "created_at": "Fri Jul 31 11:03:38 +0000 2015",
+            "in_reply_to_status_id_str": null,
+            "place": null,
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            }
+        },
+        {
+            "contributors": null,
+            "truncated": false,
+            "text": "Running smart: reversing the Rahm Emanuel's White House mistake 2008 that gave Congress away to the Republicans. http://t.co/MhTzRV4XLX",
+            "is_quote_status": false,
+            "in_reply_to_status_id": null,
+            "id": 627050655400763392,
+            "favorite_count": 0,
+            "source": "<a href=\"http://www.facebook.com/twitter\" rel=\"nofollow\">Facebook</a>",
+            "retweeted": false,
+            "coordinates": null,
+            "entities": {
+                "symbols": [],
+                "user_mentions": [],
+                "hashtags": [],
+                "urls": [
+                    {
+                        "url": "http://t.co/MhTzRV4XLX",
+                        "indices": [
+                            113,
+                            135
+                        ],
+                        "expanded_url": "http://fb.me/7zPk4gYWV",
+                        "display_url": "fb.me/7zPk4gYWV"
+                    }
+                ]
+            },
+            "in_reply_to_screen_name": null,
+            "in_reply_to_user_id": null,
+            "retweet_count": 0,
+            "id_str": "627050655400763392",
+            "favorited": false,
+            "user": {
+                "follow_request_sent": null,
+                "has_extended_profile": false,
+                "profile_use_background_image": true,
+                "default_profile_image": false,
+                "id": 1386240072,
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "verified": false,
+                "profile_text_color": "333333",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/3584479513/1d5ca43825798912fe5e93c60fd6feaa_normal.jpeg",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "followers_count": 52,
+                "profile_sidebar_border_color": "C0DEED",
+                "id_str": "1386240072",
+                "profile_background_color": "C0DEED",
+                "listed_count": 0,
+                "is_translation_enabled": false,
+                "utc_offset": null,
+                "statuses_count": 1470,
+                "description": "Writer of unintentional magic realism for half a century",
+                "friends_count": 171,
+                "location": "",
+                "profile_link_color": "0084B4",
+                "profile_image_url": "http://pbs.twimg.com/profile_images/3584479513/1d5ca43825798912fe5e93c60fd6feaa_normal.jpeg",
+                "following": null,
+                "geo_enabled": false,
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "screen_name": "UmbertoTosi",
+                "lang": "en",
+                "profile_background_tile": false,
+                "favourites_count": 6,
+                "name": "Umberto Tosi",
+                "notifications": null,
+                "url": null,
+                "created_at": "Sun Apr 28 06:21:45 +0000 2013",
+                "contributors_enabled": false,
+                "time_zone": null,
+                "protected": false,
+                "default_profile": true,
+                "is_translator": false
+            },
+            "geo": null,
+            "in_reply_to_user_id_str": null,
+            "possibly_sensitive": false,
+            "lang": "en",
+            "created_at": "Fri Jul 31 09:38:20 +0000 2015",
+            "in_reply_to_status_id_str": null,
+            "place": null,
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            }
+        }
+    ]
+}
