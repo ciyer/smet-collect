@@ -12,6 +12,16 @@ Copyright (c) 2016 Chandrasekhar Ramakrishnan. All rights reserved.
 import json
 import os
 from datetime import datetime
+import six
+
+if six.PY2:
+    from urllib import quote as urllibquote
+else:
+    from urllib.parse import quote as urllibquote
+
+
+def urlquote(string):
+    return urllibquote(string).replace("%20", " ")
 
 
 class AnalysisTaskConfigToJson(object):
@@ -39,7 +49,7 @@ class AnalysisTaskConfigToJson(object):
             race_dict = {"slug": race.slug, "candidates": []}
             races.append(race_dict)
             for candidate in race.candidates.all():
-                terms = [term.term for term in candidate.search_terms.all()]
+                terms = [urlquote(term.term) for term in candidate.search_terms.all()]
                 candidate_dict = {"name": candidate.name, "terms": terms}
                 race_dict["candidates"].append(candidate_dict)
         tasks = []
